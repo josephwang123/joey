@@ -1,0 +1,19 @@
+
+USD_VS_RMB = 6.77
+
+currency_str_value=input("请输入带有单位的：")
+
+unit = currency_str_value[-3:]
+
+if unit=="CNY":
+    rmb_str_value= currency_str_value[:-3]
+    rmb_value= eval(rmb_str_value)
+    USD_value=rmb_value/USD_VS_RMB
+    print("美元USD金额是", USD_value)
+
+elif unit=='USD':
+    USD_str_value = currency_str_value[:-3]
+    USD_value = eval(USD_str_value)
+
+
+    print("美元USD金额是",USD_value)
