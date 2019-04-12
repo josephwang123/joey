@@ -1,0 +1,36 @@
+"""
+        author joseph
+
+"""
+#汇率
+USD_VS_RMB=6.77
+n=0
+Currency_str_value=input("输入货币金额(如果是Q自动退出)：")
+while Currency_str_value!='Q' :
+    #n=n+1
+    #print("循环次数",n)
+
+    unit=Currency_str_value[-3:]
+    if unit=="CNY":
+
+        RMB_value=eval(Currency_str_value[:-3])
+
+        USD_value=RMB_value/USD_VS_RMB
+
+        print("换算美元货币金额：",USD_value)
+
+    elif unit=="USD":
+
+        USD_value=eval(Currency_str_value[:-3])
+
+        RMB_value=USD_value*USD_VS_RMB
+
+        print("换算人民币货币金额：",RMB_value)
+
+    else:
+
+        print("尚且不支持其他货币")
+    print("*************************************************************")
+    Currency_str_value = input("输入货币金额(如果是Q自动退出)：")
+
+print ("程序已退出")
