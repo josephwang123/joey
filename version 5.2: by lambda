@@ -1,0 +1,40 @@
+"""
+        author joseph
+        version 5.2: by lambda
+
+"""
+#汇率
+USD_VS_RMB=6.77
+
+Currency_str_value=input("输入货币金额：")
+
+
+def main():
+
+    unit=Currency_str_value[-3:]
+    if unit=="CNY":
+        current_rate=1/USD_VS_RMB
+
+    elif unit=="USD":
+
+        current_rate =  USD_VS_RMB
+
+
+    else:
+        current_rate=-1
+
+    if current_rate!=-1:
+
+        imput_money=eval(Currency_str_value[:-3])
+
+        convert_currency2 = lambda x: x * current_rate
+
+        output=convert_currency2(imput_money)
+
+        print("输出金额",output)
+    else:
+        print("尚且不支持")
+
+if __name__=="__main__":
+
+    main()
