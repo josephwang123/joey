@@ -1,0 +1,36 @@
+"""
+        author joseph
+        version 5.1: by main
+"""
+#汇率
+USD_VS_RMB=6.77
+
+Currency_str_value=input("输入货币金额：")
+def currency(im,cr):
+    out=im*cr
+    return out
+
+def main():
+
+    unit=Currency_str_value[-3:]
+    if unit=="CNY":
+        current_rate=1/USD_VS_RMB
+
+    elif unit=="USD":
+
+        current_rate =  USD_VS_RMB
+
+
+    else:
+        current_rate=-1
+
+    if current_rate!=-1:
+        imput_money=eval(Currency_str_value[:-3])
+        output = currency(imput_money,current_rate)
+        print("输出金额",output)
+    else:
+        print("尚且不支持")
+
+if __name__=="__main__":
+
+    main()
