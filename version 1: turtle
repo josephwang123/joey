@@ -1,0 +1,25 @@
+"""
+        author joseph
+        version 1: turtle
+
+"""
+import turtle
+
+
+
+def main():
+
+    count=1
+
+    while count<=5:
+
+        turtle.forward(100)
+        turtle.right(144)
+        count = count + 1
+
+    turtle.exitonclick()
+
+
+if __name__=="__main__":
+
+    main()
