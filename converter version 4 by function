@@ -11,8 +11,6 @@ def currency(im,cr):
     out=im*cr
     return out
 
-while Currency_str_value
-
     unit=Currency_str_value[-3:]
     if unit=="CNY":
         current_rate=1/USD_VS_RMB
