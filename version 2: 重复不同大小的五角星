@@ -1,0 +1,32 @@
+"""
+        author joseph
+        version 2: 重复不同大小的五角星
+
+"""
+import turtle
+
+def pentagram(size):
+    count = 1
+
+    while count <= 5:
+        turtle.forward(size)
+        turtle.right(144)
+        count = count + 1
+
+def main():
+    size=50
+
+    while size<=100:
+
+        size=size+10
+
+        pentagram(size)
+
+
+
+    turtle.exitonclick()
+
+
+if __name__=="__main__":
+
+    main()
